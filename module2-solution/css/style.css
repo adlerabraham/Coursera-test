@@ -1,0 +1,125 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 200%;
+  }
+  
+  .sec-title{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 1px;
+    margin-block-start: 0px;
+    height: 15%;
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.2em;
+    
+  }
+
+ 
+
+  .title-1{
+    background-color: rgb(233, 88, 136);
+  }
+
+  .title-2{
+    background-color: red;
+  }
+
+  .title-3{
+    background-color: rgb(238, 221, 71);
+  }
+
+  p.txt {
+    
+    width: 90%;
+    height: 70%;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+    top: 10%;
+  }
+
+  .col-sm-12{
+    width: 100%;
+    height: 150px;
+    float: left;
+    background-color: aqua;
+    border: 1px solid black;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+
+}
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+  
+    
+    .col-lg-4 {
+        float: left;
+        border: 1px solid black;
+        width: 31%;
+        height: 150px;
+        position: relative;
+        background-color:aqua;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 20px;
+        margin-right: 4%;
+    }
+
+    .col-2{
+      margin-right: 3%;
+    }
+    .col-3{
+      margin-right: 0%;
+    }
+  
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 {
+      float: left;
+      border: 1px solid black;
+      position: relative;
+      background-color: aqua;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 30px;
+    }
+   
+    .col-md-6 {
+      width: 47.5%;
+      height: 150px;
+      margin-right: 5%;
+    }
+
+    .col-2{
+      margin-right: 0%;
+    }
+   
+    .col-md-12 {
+      width: 100%;
+      height: 150px;
+    }
