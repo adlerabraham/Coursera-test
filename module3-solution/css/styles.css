@@ -5,7 +5,7 @@
 /**header**/
 #header-nav{
 border-radius: 0px;
-background-color: aqua;
+background-color: rgb(55, 0, 255);
 }
 .navbar-brand{
     height: unset;
@@ -14,8 +14,16 @@ background-color: aqua;
     font-size: 1.2em;
     margin: auto 15px auto 30px;
     text-shadow: 1px 1px 1px #222;
-
+    color: black;
  }
+
+ .elem{
+     border-top: 1px solid #ddd;
+ }
+ .elem:nth-child(1){
+    border-top: none;
+ }
+ 
 /****Content****/
 h2.text-center{
     font-size: 1.8em;
