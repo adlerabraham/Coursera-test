@@ -1,0 +1,52 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body.black{
+	background-color: rgb(18 18 19);
+}
+.outer-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15%;
+}
+.icon{
+	height: 110px;
+	width: 110px;
+	display: inline-table;
+	border-radius: 35%;
+	margin: 35px;padding: 20px;
+	box-shadow: inset 0px 0px 6px 2px rgb(255 255 255 / 50%),
+						7px 7px 7px rgb(0 0 0 / 50%);
+}
+.icon .glyphicon{
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 22px;
+}
+.icon .glyphicon.glyphicon-star{
+	background:rgb(216, 16, 16);
+	border-radius: 30%;
+	box-shadow: inset 0px 4px 20px 0px rgb(255 255 255 / 50%),
+						-5px 20px 91px 20px rgb(147 39 39 /57%)
+
+}
+.icon .glyphicon.glyphicon-home{
+	background:rgb(71, 147, 40);
+	border-radius: 30%;
+	box-shadow: inset 0px 4px 20px 0px rgb(255 255 255 / 50%),
+						-5px 20px 91px 20px rgb(80 129 23 /54%)
+
+}
+.icon .glyphicon.glyphicon-heart{
+	background:rgb(16, 103, 216);
+	border-radius: 30%;
+	box-shadow: inset 0px 4px 20px 0px rgb(255 255 255 / 50%),
+						-5px 20px 91px 20px rgb(31 93 122 /54%)
+
+}
