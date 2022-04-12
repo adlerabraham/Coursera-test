@@ -20,7 +20,12 @@
     </div>
 
     <!-- found-items should be implemented as a component -->
-    <found-items found-items="narrowCtrl.found" on-remove="...."></found-items>
+    <div class="found-item">
+      <found-items-directive found-items="narrowCtrl.found" on-remove="narrowCtrl.remove(labelIndex)">
+      
+      </found-items-directive>
+    </div>
+    
   </div>
 
 </body>
