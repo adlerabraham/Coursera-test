@@ -4,16 +4,16 @@
     angular.module('menuApp')
     .component('categories',{
         templateUrl: "src/template/menu-categories.template.html",
-        controller: categoriesComponentController,
+        //controller: categoriesComponentController,
         bindings:{
             categoriesArray: '<',
             test: '@'
         }
     });
 
-    function categoriesComponentController() {
-        var categories = this;
-        console.log(categories.categoriesArray);
-    }
+    // function categoriesComponentController() {
+    //     var categories = this;
+    //     console.log(categories.categoriesArray);
+    // }
    
 })();
