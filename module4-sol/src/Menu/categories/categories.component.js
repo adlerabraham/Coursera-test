@@ -5,8 +5,7 @@
     .component('categories',{
         templateUrl: "src/template/menu-categories.template.html",
         bindings:{
-            categoriesArray: '<',
-            test: '@'
+            categoriesArray: '<'
         }
     });
    
