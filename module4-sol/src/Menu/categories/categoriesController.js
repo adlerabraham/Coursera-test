@@ -2,16 +2,13 @@
     'use strict';
 
     angular.module('menuApp')
-    .controller('categoriesController',categoriesController);
+    .controller('categoriesController',CategoriesController);
 
-    function categoriesController(resultCategories) {
+    CategoriesController.$inject = ['resultCategories'];
+    function CategoriesController(resultCategories) {
         var categories= this;
-        var categorieArray = [
-            'a',
-            'b',
-            'c'
-        ];
-
-        categories.allCategories = categorieArray;
+        var categoriesArray = resultCategories.data;
+        
+        categories.allCategories = categoriesArray;
     }
 })();
