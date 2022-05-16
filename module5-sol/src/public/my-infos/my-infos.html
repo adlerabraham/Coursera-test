@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="text-center marginB" ng-if="myInfosCtrl.User.firstName == undefined">
+        Not Signed Up Yet.<a ui-sref="public.signUp"> Sign up</a> Now
+    </div>
+    <div ng-if="myInfosCtrl.User.firstName != undefined">
+        <div class="align">
+            <h1>{{myInfosCtrl.User.firstName}} {{myInfosCtrl.User.lastName}}'s informations </h1>
+            <p>First name: {{myInfosCtrl.User.firstName}}</p><br>
+            <p>Last name: {{myInfosCtrl.User.lastName}}</p><br>
+            <p>Email: {{myInfosCtrl.User.emailAddress}}</p><br>
+            <p>Phone: {{myInfosCtrl.User.phoneNumber}}</p><br>
+            <p>Favorite dish:</p>
+        </div>
+        <div class="menu-item-tile col-md-6">
+            <div class="row">
+              <div class="col-sm-5">
+                    <div class="menu-item-photo">
+                        <div>{{myInfosCtrl.User.favoriteDishDetails.short_name}}</div>
+                        <img class="img-responsive" width="250" height="150" 
+                                ng-src="{{myInfosCtrl.basePath}}/images/{{myInfosCtrl.User.favoriteDishDetails.short_name}}.jpg" 
+                                alt="{{myInfosCtrl.User.favoriteDishDetails.name}}">
+                    </div>
+                </div>
+                <div class="menu-item-description col-sm-7">
+                    <h3 class="menu-item-title">{{myInfosCtrl.User.favoriteDishDetails.name}}</h3>
+                    <p class="menu-item-details">{{myInfosCtrl.User.favoriteDishDetails.description}}</p>
+                </div>
+            </div>
+            <hr class="visible-xs">
+        </div>
+    </div>  
+</div>

@@ -1,0 +1,58 @@
+<div class="container text-center">
+    <h1 class="sign-up-title">Sign up for our newsletter</h1>
+            <form class="blackText" name="newsForm" novalidate>
+                <input type="text" name="firstName" placeholder="First name"
+                ng-model="signUpCtrl.user.firstName"
+                required><br>
+                <span
+                    ng-if="newsForm.firstName.$error.required && newsForm.firstName.$touched">
+                    The first name is required.
+                </span>
+                <br>
+
+                <input type="text" name="lastName" placeholder="Last name"
+                ng-model="signUpCtrl.user.lastName"
+                required><br>
+                <span
+                    ng-if="newsForm.lastName.$error.required && newsForm.lastName.$touched">
+                    The last name is required.
+                </span>
+                <br>
+
+                <input type="email" name="email" placeholder="Email"
+                ng-model="signUpCtrl.user.emailAddress"
+                required><br>
+                <span ng-if="newsForm.email.$invalid && newsForm.email.$touched">
+                    Must be a valid email address: handle@domain format
+                </span>
+                <br>
+
+                <input type="text" name="phone" placeholder="Phone"
+                ng-model="signUpCtrl.user.phoneNumber"
+                required
+                pattern="(\d{3})-(\d{3})-(\d{4})"><br>
+                <span ng-if="newsForm.phone.$invalid && newsForm.phone.$touched">
+                    Phone must be in the format ###-###-####.
+                </span>
+                <br>
+
+                <input type="text" name="favDish" placeholder="Specify your favorite dish"
+                ng-model="signUpCtrl.user.favoriteDish"
+                required>
+                <br>
+                <span
+                    ng-if="newsForm.favDish.$error.required && newsForm.favDish.$touched">
+                    The favorite dish is required.
+                </span>
+                <br>
+                
+                <button class="curve-button"
+                        ng-disabled="newsForm.$invalid" 
+                        ng-click="signUpCtrl.saveClient()">
+                        Submit
+                </button>
+                <br>
+                <p>{{signUpCtrl.msg}}</p>
+            </form>
+
+</div>
